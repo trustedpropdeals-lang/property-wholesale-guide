@@ -1,3 +1,7 @@
+---
+title: Property Wholesaling & Arbitrage Guide
+---
+
 # Property Wholesaling & Arbitrage Guide  
 
 Welcome to this upscale yet practical guide to getting started with property wholesaling and rental arbitrage. These strategies allow aspiring investors to profit from real estate without owning property outright. Use this guide to understand the concepts, learn step by step processes, and explore tips for success.  
@@ -15,7 +19,7 @@ Property wholesaling is a real estate strategy where an investor puts a proper
 To succeed as a wholesaler, follow these key steps:  
 
 1. **Market research:** Study your local real‑estate market, analyse recent comparable sales and understand state regulations.  
-2. **Build a buyers’ list:** Connect with cash buyers (investors) who are ready to purchase deals. Network through real‑estate meetups, online groups and “We Buy Houses” ads.  
+2. **Build a buyers’ list:** Connect with cash buyers (investors) who are ready to purchase deals. Network through real‑estate meetups, online groups and "We Buy Houses" ads.  
 3. **Find distressed properties:** Source under‑valued properties through the MLS, driving for dollars, bandit signs, direct mail or wholesaling software.  
 4. **Negotiate and secure the contract:** Agree on a purchase price and ensure the contract includes an assignment clause.  
 5. **Assign the contract:** Transfer your purchase rights to a buyer for an assignment fee or perform a double closing.  
