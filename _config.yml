@@ -1,4 +1,6 @@
 title: Property Wholesaling & Arbitrage Guide
 description: >-
   Upscale guide to property wholesaling and rental arbitrage.
-theme: jekyll-theme-cayman
+remote_theme: pages-themes/cayman@v0.2.0
+plugins:
+- jekyll-feed
