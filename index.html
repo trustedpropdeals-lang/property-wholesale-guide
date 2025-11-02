@@ -8,152 +8,232 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-body { font-family: 'Poppins', sans-serif; margin: 0; background-color: #f5f7fa; color: #333; line-height: 1.6; }
-.hero { position: relative; background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1560185127-6aa9b0000c81?auto=format&fit=crop&w=1600&q=80'); background-size: cover; background-position: center; padding: 100px 20px; text-align: center; color: #fff; }
-.hero h1 { font-size: 3.5rem; margin: 0 0 0.5em; }
-.hero p { font-size: 1.3rem; max-width: 800px; margin: 0 auto; }
-.container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
-.section { background: #fff; margin-bottom: 40px; padding: 40px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-.section h2 { color: #004b93; margin-top: 0; }
-.section img { width: 100%; border-radius: 8px; margin: 20px 0; }
-.section ul, .section ol { margin-left: 20px; }
-.quiz, .calculator { margin-top: 20px; }
-.quiz-question { margin-bottom: 15px; }
-.quiz-question label { display: block; margin-bottom: 5px; font-weight: 600; }
-.quiz-result, .calc-result { margin-top: 10px; font-weight: 600; }
-input[type="number"], input[type="text"] { padding: 8px; width: 100%; max-width: 300px; border: 1px solid #ccc; border-radius: 4px; }
-button { background-color: #004b93; color: #fff; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; font-size: 1rem; }
-button:hover { background-color: #00376d; }
-footer { text-align: center; background: #004b93; color: #fff; padding: 20px; }
-a { color: #004b93; text-decoration: none; }
-a:hover { text-decoration: underline; }
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+.hero {
+  position: relative;
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1560185127-6aa9b0000c81?auto=format&fit=crop&w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px 140px;
+}
+.hero h1 {
+  font-size: 3rem;
+  margin: 0 0 0.5em;
+}
+.hero p {
+  font-size: 1.25rem;
+  max-width: 800px;
+  margin: 0 auto 1.5em;
+}
+.cta-button {
+  background-color: #fff;
+  color: #004b93;
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+.cta-button:hover {
+  background-color: #004b93;
+  color: #fff;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+.section {
+  background: #fff;
+  margin-bottom: 40px;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.section h2 {
+  color: #004b93;
+  margin-top: 0;
+}
+.section img {
+  width: 100%;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+.section ul, .section ol {
+  margin-left: 20px;
+}
+.quiz, .calculator {
+  margin-top: 20px;
+}
+.quiz-question {
+  margin-bottom: 15px;
+}
+.quiz-question label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+.quiz-result, .calc-result {
+  margin-top: 10px;
+  font-weight: 600;
+}
+input[type="number"], input[type="text"] {
+  padding: 8px;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+button {
+  background-color: #004b93;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+button:hover {
+  background-color: #00376d;
+}
+footer {
+  text-align: center;
+  background: #004b93;
+  color: #fff;
+  padding: 20px;
+}
+a {
+  color: #004b93;
+  text-decoration: none;
+}
 </style>
 </head>
 <body>
-<header class="hero">
-  <h1>Property Wholesaling & Arbitrage Guide</h1>
-  <p>Learn how to profit from real estate without owning property through wholesaling contracts and rental arbitrage.</p>
-</header>
-<main class="container">
-  <section class="section">
+<div class="hero">
+  <h1>Property Wholesaling & Rental Arbitrage</h1>
+  <p>Learn how to start a profitable real-estate business with low capital by wholesaling contracts and leveraging rental arbitrage strategies.</p>
+  <a href="#quiz" class="cta-button">Start Learning</a>
+</div>
+<div class="container">
+  <div class="section">
     <h2>What is Property Wholesaling?</h2>
-    <p>Property wholesaling is a real estate strategy where investors secure a property under contract at a below‑market price and then assign that contract to a buyer for a fee. The wholesaler never takes possession of the property; instead they profit by connecting motivated sellers with cash buyers.</p>
+    <p>Property wholesaling is a strategy where investors find properties below market value, sign a purchase agreement, and then assign that contract to another buyer for a fee. Unlike flipping, wholesalers don't renovate or hold the property; they simply secure the right to purchase and pass it along.</p>
     <ul>
-      <li>Low capital requirement: no down payments or mortgages.</li>
-      <li>Quick turnaround: assignments can close in days or weeks.</li>
-      <li>Focus on finding distressed or undervalued properties.</li>
+      <li>Low capital requirements: you don't need to close on the property yourself</li>
+      <li>Focus on finding motivated sellers and distressed properties</li>
+      <li>Earn assignment fees by connecting sellers with cash buyers</li>
     </ul>
-  </section>
-  <section class="section">
+  </div>
+  <div class="section">
     <h2>Steps to Start Wholesaling</h2>
     <ol>
-      <li><strong>Market research:</strong> Understand local laws, property values and buyer demand.</li>
-      <li><strong>Build a buyers list:</strong> Network with cash buyers and investors.</li>
-      <li><strong>Find distressed properties:</strong> Look for off‑market deals, foreclosures and motivated sellers.</li>
-      <li><strong>Negotiate and secure contract:</strong> Get a purchase agreement with an assignment clause.</li>
-      <li><strong>Assign the contract:</strong> Transfer the contract to a buyer for a fee; use a title company or attorney to close.</li>
+      <li><strong>Market Research:</strong> Understand local real estate laws and market trends to identify opportunities.</li>
+      <li><strong>Build a Buyers’ List:</strong> Network with cash buyers and investors who are ready to purchase deals quickly.</li>
+      <li><strong>Find Distressed Properties:</strong> Use MLS, driving for dollars, direct mail, and online tools to locate motivated sellers.</li>
+      <li><strong>Negotiate and Secure Contracts:</strong> Get properties under contract at favorable prices with assignable clauses.</li>
+      <li><strong>Assign the Contract:</strong> Transfer the purchase agreement to a buyer for a fee and close through a title company or attorney.</li>
     </ol>
-  </section>
-  <section class="section">
+  </div>
+  <div class="section">
     <h2>What is Rental Arbitrage?</h2>
-    <p>Rental arbitrage involves leasing a property long‑term and then re‑renting it on short‑term platforms like Airbnb to capture higher nightly rates. Investors take advantage of strong tourism demand and avoid mortgage debt, but must comply with local short‑term rental regulations.</p>
+    <p>Rental arbitrage involves leasing a property long-term and then re-renting it short-term on platforms like Airbnb. By capturing the spread between long-term rent and higher short-term rates, you can generate cash flow without owning the asset.</p>
     <ul>
-      <li>Accessible entry: bypasses the need for large down payments.</li>
-      <li>High yield: nightly income can exceed monthly rent costs.</li>
-      <li>Flexibility: operate in multiple markets using leases.</li>
+      <li>Skip large down payments and mortgages by leasing instead of buying</li>
+      <li>Operate in high-demand travel markets to maximize occupancy</li>
+      <li>Ensure leases permit subletting and compliance with local regulations</li>
     </ul>
-  </section>
-  <section class="section">
+  </div>
+  <div class="section">
     <h2>Steps to Start Rental Arbitrage</h2>
     <ol>
-      <li><strong>Research laws:</strong> Check local short‑term rental regulations and HOA rules.</li>
-      <li><strong>Select a profitable market:</strong> Use tools like AirDNA to evaluate occupancy rates and average daily rates.</li>
-      <li><strong>Negotiate lease terms:</strong> Get landlord permission to sublet and operate STRs.</li>
-      <li><strong>Calculate margins:</strong> Budget for rent, furnishings, utilities, cleaning and platform fees.</li>
-      <li><strong>Launch professionally:</strong> Use professional photos, dynamic pricing, and provide excellent guest experiences.</li>
+      <li><strong>Understand Regulations:</strong> Research local short-term rental laws and HOA rules.</li>
+      <li><strong>Choose the Right Property:</strong> Select homes in popular neighborhoods with attractive amenities.</li>
+      <li><strong>Negotiate Lease Terms:</strong> Secure landlord approval for subletting and set clear expectations.</li>
+      <li><strong>Calculate Profit Margins:</strong> Account for rent, furnishings, utilities, cleaning, fees, and taxes.</li>
+      <li><strong>Launch Professionally:</strong> Use high-quality photos, dynamic pricing tools, and excellent guest service.</li>
     </ol>
-  </section>
-  <section class="section">
-    <h2>Interactive Lesson: Quiz</h2>
+  </div>
+  <div id="quiz" class="section">
+    <h2>Interactive Quiz: Test Your Knowledge</h2>
     <div class="quiz">
       <div class="quiz-question">
-        <label for="q1">1. What is the primary goal of a property wholesaler?</label>
+        <label for="q1">1. In wholesaling, what do investors sell?</label>
         <select id="q1">
-          <option value="">Select an answer</option>
-          <option value="wrong">To buy and renovate houses</option>
-          <option value="correct">To assign a purchase contract for a fee</option>
-          <option value="wrong">To manage rental properties</option>
+          <option value="">--Select an answer--</option>
+          <option value="Property">The property itself</option>
+          <option value="Contract">The purchase contract</option>
+          <option value="Renovations">Renovations</option>
         </select>
       </div>
       <div class="quiz-question">
-        <label for="q2">2. Which tool is useful for analyzing short‑term rental markets?</label>
+        <label for="q2">2. Rental arbitrage involves:</label>
         <select id="q2">
-          <option value="">Select an answer</option>
-          <option value="wrong">REsimpli</option>
-          <option value="wrong">MLS</option>
-          <option value="correct">AirDNA</option>
+          <option value="">--Select an answer--</option>
+          <option value="Buying">Buying and selling properties</option>
+          <option value="Leasing">Leasing and subletting a property</option>
+          <option value="Flipping">Flipping houses after renovation</option>
         </select>
       </div>
       <div class="quiz-question">
-        <label for="q3">3. What clause allows wholesalers to transfer a purchase agreement to another buyer?</label>
+        <label for="q3">3. Which tool helps estimate short-term rental revenue?</label>
         <select id="q3">
-          <option value="">Select an answer</option>
-          <option value="correct">Assignment clause</option>
-          <option value="wrong">Escrow clause</option>
-          <option value="wrong">Earnest money clause</option>
+          <option value="">--Select an answer--</option>
+          <option value="REsimpli">REsimpli</option>
+          <option value="AirDNA">AirDNA</option>
+          <option value="Zillow">Zillow</option>
         </select>
       </div>
       <button onclick="checkQuiz()">Check Answers</button>
-      <div id="quizResult" class="quiz-result"></div>
+      <div class="quiz-result" id="quiz-result"></div>
     </div>
-  </section>
-  <section class="section">
-    <h2>Interactive Lesson: Deal Analyzer</h2>
-    <p>Use the 70% rule to estimate your maximum allowable offer (MAO). Enter the After Repair Value (ARV) and estimated repair costs.</p>
+  </div>
+  <div class="section">
+    <h2>Deal Analyzer: Estimate Your Maximum Offer</h2>
+    <p>Use the 70% rule to estimate the maximum price you should pay for a property. Enter the after repair value (ARV) and estimated repair costs to calculate.</p>
     <div class="calculator">
-      <label for="arv">After Repair Value (ARV):</label><br>
-      <input type="number" id="arv" placeholder="e.g. 200000"><br><br>
-      <label for="repairs">Repair Costs:</label><br>
-      <input type="number" id="repairs" placeholder="e.g. 30000"><br><br>
-      <button onclick="analyzeDeal()">Calculate MAO</button>
-      <div id="calcResult" class="calc-result"></div>
+      <label for="arv">After Repair Value (ARV):</label>
+      <input type="number" id="arv" placeholder="e.g., 250000">
+      <label for="repairs">Repair Costs:</label>
+      <input type="number" id="repairs" placeholder="e.g., 40000">
+      <button onclick="analyzeDeal()">Analyze Deal</button>
+      <div class="calc-result" id="calc-result"></div>
     </div>
-  </section>
-  <section class="section">
+  </div>
+  <div class="section">
     <h2>Resources & Tools</h2>
-    <p>Explore these resources to deepen your knowledge and find deals:</p>
+    <p>Continue learning and find deals faster with these helpful resources:</p>
     <ul>
-      <li><a href="https://www.realestateskills.com/blog/wholesale-real-estate" target="_blank">Real Estate Skills – Wholesale Real Estate Guide</a></li>
-      <li><a href="https://resimpli.com" target="_blank">REsimpli – Wholesaling CRM & Deal Management</a></li>
-      <li><a href="https://www.airdna.co" target="_blank">AirDNA – Short‑Term Rental Market Data</a></li>
-      <li><a href="https://www.fortunebuilders.com/wholesaling-real-estate/" target="_blank">FortuneBuilders – Wholesaling Overview</a></li>
+      <li><a href="https://www.realestateskills.com/blog/wholesaling-houses" target="_blank">Real Estate Skills: Wholesaling Houses Guide</a></li>
+      <li><a href="https://resimpli.com/blog/what-is-real-estate-wholesaling-and-how-does-it-work/" target="_blank">REsimpli: What is Real Estate Wholesaling</a></li>
+      <li><a href="https://www.airdna.co/" target="_blank">AirDNA: Short-Term Rental Market Data</a></li>
+      <li><a href="https://www.fortunebuilders.com/real-estate-wholesaling-guide/" target="_blank">FortuneBuilders: Real Estate Wholesaling Guide</a></li>
     </ul>
-  </section>
-</main>
+  </div>
+</div>
 <footer>
-  © 2025 Property Wholesaling & Arbitrage Guide – All rights reserved.
+  &copy; 2025 Property Wholesaling & Arbitrage Guide &ndash; All rights reserved.
 </footer>
 <script>
 function checkQuiz() {
   var score = 0;
-  var q1 = document.getElementById('q1').value;
-  var q2 = document.getElementById('q2').value;
-  var q3 = document.getElementById('q3').value;
-  if (q1 === 'correct') score++;
-  if (q2 === 'correct') score++;
-  if (q3 === 'correct') score++;
-  var result = document.getElementById('quizResult');
-  result.textContent = 'You scored ' + score + ' out of 3.';
+  if (document.getElementById('q1').value === 'Contract') score++;
+  if (document.getElementById('q2').value === 'Leasing') score++;
+  if (document.getElementById('q3').value === 'AirDNA') score++;
+  document.getElementById('quiz-result').textContent = 'You scored ' + score + '/3 correct!';
 }
 function analyzeDeal() {
-  var arv = parseFloat(document.getElementById('arv').value);
-  var repairs = parseFloat(document.getElementById('repairs').value);
-  if (isNaN(arv) || isNaN(repairs)) {
-    document.getElementById('calcResult').textContent = 'Please enter valid numbers.';
-    return;
-  }
+  var arv = parseFloat(document.getElementById('arv').value) || 0;
+  var repairs = parseFloat(document.getElementById('repairs').value) || 0;
   var mao = (arv * 0.7) - repairs;
-  document.getElementById('calcResult').textContent = 'Maximum Allowable Offer (70% rule): $' + mao.toFixed(2);
+  document.getElementById('calc-result').textContent = 'Maximum Allowable Offer: $' + mao.toFixed(2);
 }
 </script>
 </body>
