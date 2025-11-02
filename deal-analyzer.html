@@ -1,151 +1,151 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Deal Analyzer & Resources</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f5f5f5;
-      color: #333;
-    }
-    nav {
-      background-color: rgba(0,0,0,0.8);
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 1000;
-      padding: 10px 20px;
-      display: flex;
-      justify-content: flex-end;
-    }
-    nav a {
-      color: #fff;
-      margin-left: 20px;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    .hero {
-      background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1600&q=80');
-      background-size: cover;
-      background-position: center;
-      color: white;
-      text-align: center;
-      padding: 150px 20px 120px;
-      margin-top: 50px;
-    }
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
-    }
-    .hero p {
-      font-size: 1.2rem;
-      margin-bottom: 20px;
-    }
-    .sections {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 40px 20px;
-    }
-    .section {
-      background-color: #fff;
-      padding: 20px 30px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      margin-bottom: 30px;
-    }
-    .section h2 {
-      color: #0a66c2;
-      margin-top: 0;
-    }
-    .section ul {
-      padding-left: 20px;
-    }
-    label {
-      display: block;
-      margin: 10px 0 5px;
-    }
-    input[type="number"] {
-      width: 100%;
-      padding: 8px;
-      margin-bottom: 10px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-    button {
-      background-color: #0a66c2;
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-      cursor: pointer;
-      font-weight: 600;
-    }
-    button:hover {
-      background-color: #084a94;
-    }
-    .footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9rem;
-      color: #888;
-    }
-  </style>
-</head>
-<body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="lessons.html">Lessons</a>
-    <a href="deal-analyzer.html">Deal Analyzer</a>
-  </nav>
-  <header class="hero">
-    <h1>Deal Analyzer & Resources</h1>
-    <p>Calculate your maximum allowable offer and explore essential tools.</p>
-  </header>
-  <main class="sections">
-    <div class="section">
-      <h2>Comprehensive Deal Analyzer</h2>
-      <p>Use this tool to estimate your maximum allowable offer (MAO) based on the 70 % rule and your desired profit.</p>
-      <label for="arv">After‑Repair Value (ARV):</label>
-      <input type="number" id="arv" placeholder="e.g., 300000">
-      <label for="repair">Repair Costs:</label>
-      <input type="number" id="repair" placeholder="e.g., 40000">
-      <label for="profit">Desired Profit:</label>
-      <input type="number" id="profit" placeholder="e.g., 20000">
-      <label for="other">Other Costs (closing, holding, etc.):</label>
-      <input type="number" id="other" placeholder="e.g., 5000">
-      <button onclick="calculateMAO()">Calculate MAO</button>
-      <p id="mao-result"></p>
-    </div>
-    <div class="section">
-      <h2>Resources & Tools</h2>
-      <ul>
-        <li><a href="https://realestateskills.com" target="_blank">Real Estate Skills</a> – Education and training for real estate wholesaling and flipping.</li>
-        <li><a href="https://resimpli.com" target="_blank">REsimpli</a> – CRM and wholesaling software for deal management.</li>
-        <li><a href="https://www.airdna.co" target="_blank">AirDNA</a> – Short‑term rental market data and analytics.</li>
-        <li><a href="https://www.fortunebuilders.com" target="_blank">FortuneBuilders</a> – Coaching and resources for real‑estate investing.</li>
-      </ul>
-    </div>
-  </main>
-  <footer class="footer">
-    &copy; 2025 Property Wholesaling &amp; Arbitrage Guide – All rights reserved.
-  </footer>
-  <script>
-    function calculateMAO() {
-      var arv = parseFloat(document.getElementById('arv').value) || 0;
-      var repair = parseFloat(document.getElementById('repair').value) || 0;
-      var profit = parseFloat(document.getElementById('profit').value) || 0;
-      var other = parseFloat(document.getElementById('other').value) || 0;
-      var mao = (arv * 0.7) - repair - profit - other;
-      document.getElementById('mao-result').textContent = 'Maximum Allowable Offer (MAO): $' + mao.toFixed(2);
-    }
-  </script>
-</body>
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>Deal Analyzer & Resources</title>  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">  
+  <style>  
+    body {  
+      font-family: 'Poppins', sans-serif;  
+      margin: 0;  
+      padding: 0;  
+      background-color: #f5f5f5;  
+      color: #333;  
+    }  
+    nav {  
+      background-color: rgba(0,0,0,0.8);  
+      position: fixed;  
+      top: 0;  
+      width: 100%;  
+      z-index: 1000;  
+      padding: 10px 20px;  
+      display: flex;  
+      justify-content: flex-end;  
+    }  
+    nav a {  
+      color: #fff;  
+      margin-left: 20px;  
+      text-decoration: none;  
+      font-weight: 600;  
+    }  
+    nav a:hover {  
+      text-decoration: underline;  
+    }  
+    .hero {  
+      background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1600&q=80');  
+      background-size: cover;  
+      background-position: center;  
+      color: white;  
+      text-align: center;  
+      padding: 150px 20px 120px;  
+      margin-top: 50px;  
+    }  
+    .hero h1 {  
+      font-size: 3rem;  
+      margin-bottom: 10px;  
+    }  
+    .hero p {  
+      font-size: 1.2rem;  
+      margin-bottom: 20px;  
+    }  
+    .sections {  
+      max-width: 900px;  
+      margin: 0 auto;  
+      padding: 40px 20px;  
+    }  
+    .section {  
+      background-color: #fff;  
+      padding: 20px 30px;  
+      border-radius: 10px;  
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);  
+      margin-bottom: 30px;  
+    }  
+    .section h2 {  
+      color: #0a66c2;  
+      margin-top: 0;  
+    }  
+    .section ul {  
+      padding-left: 20px;  
+    }  
+    label {  
+      display: block;  
+      margin: 10px 0 5px;  
+    }  
+    input[type="number"] {  
+      width: 100%;  
+      padding: 8px;  
+      margin-bottom: 10px;  
+      border: 1px solid #ccc;  
+      border-radius: 4px;  
+    }  
+    button {  
+      background-color: #0a66c2;  
+      color: #fff;  
+      border: none;  
+      padding: 10px 20px;  
+      border-radius: 5px;  
+      cursor: pointer;  
+      font-weight: 600;  
+    }  
+    button:hover {  
+      background-color: #084a94;  
+    }  
+    .footer {  
+      text-align: center;  
+      padding: 20px;  
+      font-size: 0.9rem;  
+      color: #888;  
+    }  
+  </style>  
+</head>  
+<body>  
+  <nav>  
+    <a href="index.html">Home</a>  
+    <a href="lessons.html">Lessons</a>  
+    <a href="deal-analyzer.html">Resources</a>  
+  </nav>  
+  <header class="hero">  
+    <h1>Deal Analyzer & Resources</h1>  
+    <p>Calculate your maximum allowable offer and explore essential tools.</p>  
+  </header>  
+  <main class="sections">  
+    <div class="section">  
+      <h2>Comprehensive Deal Analyzer</h2>  
+      <p>Use this tool to estimate your maximum allowable offer (MAO) based on the 70 % rule and your desired profit.</p>  
+      <label for="arv">After‑Repair Value (ARV):</label>  
+      <input type="number" id="arv" placeholder="e.g., 300000">  
+      <label for="repair">Repair Costs:</label>  
+      <input type="number" id="repair" placeholder="e.g., 40000">  
+      <label for="profit">Desired Profit:</label>  
+      <input type="number" id="profit" placeholder="e.g., 20000">  
+      <label for="other">Other Costs (closing, holding, etc.):</label>  
+      <input type="number" id="other" placeholder="e.g., 5000">  
+      <button onclick="calculateMAO()">Calculate MAO</button>  
+      <p id="mao-result"></p>  
+    </div>  
+    <div class="section">  
+      <h2>Resources & Tools</h2>  
+      <ul>  
+        <li><a href="https://realestateskills.com" target="_blank">Real Estate Skills</a> – Education and training for real estate wholesaling and flipping.</li>  
+        <li><a href="https://resimpli.com" target="_blank">REsimpli</a> – CRM and wholesaling software for deal management.</li>  
+        <li><a href="https://www.airdna.co" target="_blank">AirDNA</a> – Short‑term rental market data and analytics.</li>  
+        <li><a href="https://www.fortunebuilders.com" target="_blank">FortuneBuilders</a> – Coaching and resources for real‑estate investing.</li>  
+      </ul>  
+    </div>  
+  </main>  
+  <footer class="footer">  
+    &copy; 2025 Property Wholesaling &amp; Arbitrage Guide – All rights reserved.  
+  </footer>  
+  <script>  
+    function calculateMAO() {  
+      var arv = parseFloat(document.getElementById('arv').value) || 0;  
+      var repair = parseFloat(document.getElementById('repair').value) || 0;  
+      var profit = parseFloat(document.getElementById('profit').value) || 0;  
+      var other = parseFloat(document.getElementById('other').value) || 0;  
+      var mao = (arv * 0.7) - repair - profit - other;  
+      document.getElementById('mao-result').textContent = 'Maximum Allowable Offer (MAO): $' + mao.toFixed(2);  
+    }  
+  </script>  
+</body>  
 </html>
