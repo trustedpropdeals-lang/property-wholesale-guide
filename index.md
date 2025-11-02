@@ -1,10 +1,10 @@
 # Property Wholesaling & Arbitrage Guide  
 
-Welcome to this upscale yet practical guide to getting started with property wholesaling and rental arbitrage. These strategies allow aspiring investors to profit from real estate without owning property outright. Use this guide to understand the concepts, learn step‑by‑step processes, and explore tips for success.  
+Welcome to this upscale yet practical guide to getting started with property wholesaling and rental arbitrage. These strategies allow aspiring investors to profit from real estate without owning property outright. Use this guide to understand the concepts, learn step by step processes, and explore tips for success.  
 
 ## What is Property Wholesaling?  
 
-Property wholesaling is a real‑estate strategy where an investor puts a property under contract at a below‑market price and then assigns that contract to another buyer for a fee. Instead of buying the property and renovating it, the wholesaler simply secures the rights to purchase and then passes those rights along to a cash buyer. Benefits include:  
+Property wholesaling is a real estate strategy where an investor puts a property under contract at a below‑market price and then assigns that contract to another buyer for a fee. Instead of buying the property and renovating it, the wholesaler simply secures the rights to purchase and then passes those rights along to a cash buyer. Benefits include:  
 
 - **Low capital outlay:** You never actually purchase the property, so you avoid large down payments or mortgages.  
 - **Quick transactions:** Deals can close quickly, often within weeks, allowing for rapid profit cycles.  
