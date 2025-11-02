@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter 1: Foundations of Property Wholesaling</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+body {font-family: 'Poppins', sans-serif; margin:0; padding:0; background:#f5f5f5;}
+nav {background-color: rgba(0,0,0,0.8); position: fixed; top:0; width:100%; z-index:1000; display:flex; justify-content:center; padding:10px 20px;}
+nav a {color:#fff; margin-left:20px; text-decoration:none; font-weight:600;}
+nav a:hover {text-decoration:underline;}
+.hero {background-color:#0a66c2; color:#fff; padding:120px 20px 80px; text-align:center; margin-top:50px;}
+.hero h1 {font-size:2.5rem; margin-bottom:10px;}
+.hero p {font-size:1.2rem;}
+.section {max-width:900px; margin:40px auto; background:#fff; padding:20px 30px; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1); margin-bottom:30px;}
+.section h2 {color:#0a66c2; font-size:1.6rem; margin-bottom:10px;}
+.question {margin-bottom:20px;}
+.question button {background:#0a66c2; color:#fff; border:none; padding:10px 20px; border-radius:4px; cursor:pointer; font-weight:600;}
+.question button:hover {background:#084a94;}
+.result {margin-top:10px; font-weight:600;}
+.step-list {list-style-type:none; padding:0;}
+.step-list li {margin:10px 0; cursor:pointer; color:#0a66c2; font-weight:600;}
+.step-details {display:none; margin-top:10px; padding-left:20px;}
+</style>
+</head>
+<body>
+<nav>
+<a href="index.html">Home</a>
+<a href="lessons.html">Lessons</a>
+<a href="deal-analyzer.html">Resources</a>
+</nav>
+<div class="hero">
+<h1>Chapter 1: Foundations of Property Wholesaling</h1>
+<p>Learn what property wholesaling is and why it's a powerful entry strategy.</p>
+</div>
+<div class="section">
+<h2>What You'll Learn</h2>
+<p>Property wholesaling involves finding undervalued real estate, securing the rights to purchase via a contract, and assigning that contract to another buyer for a fee. In this lesson, you'll explore the fundamentals of wholesaling, including how wholesalers profit, legal considerations, and why wholesaling requires little capital.</p>
+</div>
+<div class="section">
+<h2>Quick Quiz</h2>
+<div class="question">
+<p>Which statement best describes property wholesaling?</p>
+<label><input type="radio" name="quiz1" value="A"> A. Listing a property for sale as a licensed real-estate agent</label><br>
+<label><input type="radio" name="quiz1" value="B"> B. Buying, renovating and selling a property for profit</label><br>
+<label><input type="radio" name="quiz1" value="C"> C. Getting a property under contract and assigning that contract to another buyer for a fee</label><br>
+<label><input type="radio" name="quiz1" value="D"> D. Renting a property on a short-term basis to travelers</label><br>
+<button onclick="checkQuiz()">Check Answer</button>
+<p id="quizResult" class="result"></p>
+</div>
+</div>
+<div class="section">
+<h2>Assignment Fee Calculator</h2>
+<div class="question">
+<p>Imagine you secure a property under contract for a purchase price and assign it to an investor for a higher price. Enter the numbers below to calculate your assignment fee.</p>
+<label>Purchase Price: <input type="number" id="purchasePrice" placeholder="e.g., 80000"></label><br>
+<label>Assignment Price: <input type="number" id="assignmentPrice" placeholder="e.g., 90000"></label><br>
+<button onclick="calcFee()">Calculate Fee</button>
+<p id="feeResult" class="result"></p>
+</div>
+</div>
+<div class="section">
+<h2>Explore the Wholesaling Process</h2>
+<p>Click each step below to reveal more details.</p>
+<ul class="step-list">
+<li onclick="toggleStep(0)">1. Find Motivated Sellers</li>
+<div class="step-details" id="step0">Drive for dollars, search MLS and foreclosure listings, network with realtors, and use direct mail and cold calling to find distressed properties.</div>
+<li onclick="toggleStep(1)">2. Build a Buyers List</li>
+<div class="step-details" id="step1">Create and nurture a list of cash buyers through REI meetings, social media and networking events to ensure you have interested investors ready.</div>
+<li onclick="toggleStep(2)">3. Negotiate & Secure Contract</li>
+<div class="step-details" id="step2">Negotiate a purchase agreement that allows assignment, ensuring the contract price leaves room for an assignment fee.</div>
+<li onclick="toggleStep(3)">4. Assign & Close</li>
+<div class="step-details" id="step3">Assign the contract to your buyer, collect your assignment fee at closing, and celebrate your successful wholesale deal!</div>
+</ul>
+</div>
+<script>
+function checkQuiz() {
+ var answer = document.querySelector('input[name="quiz1"]:checked');
+ var result = document.getElementById('quizResult');
+ if(!answer) {
+   result.textContent = "Please select an answer.";
+   result.style.color = '#c00';
+   return;
+ }
+ if (answer.value === "C") {
+   result.textContent = "Correct! Wholesaling is assigning a purchase contract for a fee.";
+   result.style.color = '#0a66c2';
+ } else {
+   result.textContent = "Not quite. Remember, wholesalers assign purchase contracts rather than buying and renovating properties or renting them.";
+   result.style.color = '#c00';
+ }
+}
+function calcFee() {
+ var purchase = parseFloat(document.getElementById('purchasePrice').value) || 0;
+ var assignment = parseFloat(document.getElementById('assignmentPrice').value) || 0;
+ var fee = assignment - purchase;
+ var result = document.getElementById('feeResult');
+ if(fee >= 0) {
+   result.textContent = "Your assignment fee would be: $" + fee.toFixed(2);
+   result.style.color = '#0a66c2';
+ } else {
+   result.textContent = "Your assignment price should be higher than your purchase price!";
+   result.style.color = '#c00';
+ }
+}
+function toggleStep(index) {
+ var detail = document.getElementById('step' + index);
+ if(detail.style.display === 'block') {
+   detail.style.display = 'none';
+ } else {
+   detail.style.display = 'block';
+ }
+}
+</script>
+</body>
+</html>
